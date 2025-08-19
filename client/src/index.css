@@ -1,0 +1,22 @@
+/* Reset defaults */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove old Vite boilerplate constraint */
+#root {
+  max-width: none;
+  text-align: left;
+  background-color: #f9f9f9; /* Optional, gives neutral background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+/* Basic link style reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}

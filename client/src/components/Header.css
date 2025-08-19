@@ -1,0 +1,80 @@
+.top-nav {
+  background-color: black;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+    color: white;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-tabs a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-tabs a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #007BFF;
+}
+
+.nav-tabs a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #007BFF;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-tabs a:hover::after {
+  width: 100%;
+}
+
+
+.brand-logo {
+  height: 40px; /* ✅ keeps logo proportional */
+  width: auto;
+  margin-right: 10px; /* ✅ spacing between logo and text */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .top-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-tabs {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

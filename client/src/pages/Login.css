@@ -1,0 +1,59 @@
+/* Global container centering */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card design */
+.login-card {
+  background: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Logo image */
+.login-logo {
+  width: 90px;
+  margin-bottom: 1rem;
+}
+
+/* Main title */
+.login-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+/* Subtitle */
+.login-subtitle {
+  font-size: 1rem;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1.8rem;
+}
+
+/* Login/logout button */
+.login-button, .logout-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover,
+.logout-button:hover {
+  background-color: #0056b3;
+}

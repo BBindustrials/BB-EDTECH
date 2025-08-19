@@ -1,0 +1,63 @@
+.challenge-container {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.challenge-question {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.challenge-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.challenge-container button {
+  background-color: #3f83f8;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.challenge-container button:hover {
+  background-color: #2c5bb5;
+}
+
+.feedback {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.correct {
+  background-color: #e0ffe0;
+  color: #2b8f2b;
+}
+
+.incorrect {
+  background-color: #ffe5e5;
+  color: #d04545;
+}
+
+.export-options {
+  margin-top: 15px;
+}
+
+.retry-info {
+  margin-top: 10px;
+  color: #333;
+  font-style: italic;
+}

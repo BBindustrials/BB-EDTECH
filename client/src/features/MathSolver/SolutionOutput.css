@@ -1,0 +1,285 @@
+/* src/pages/SolutionOutput.css */
+
+/* Container */
+.solution-output {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* No solution placeholder */
+.no-solution {
+  text-align: center;
+  color: #555;
+}
+
+.loading-icon {
+  font-size: 1.8rem;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* TTS Settings */
+.tts-settings h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.tts-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.tts-control-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+#voice-select,
+#rate-range {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.read-aloud-btn {
+  padding: 8px 14px;
+  background-color: #e0e7ff;
+  border: none;
+  border-radius: 6px;
+  color: #1e40af;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.read-aloud-btn:hover {
+  background-color: #c7d2fe;
+}
+
+/* Solution Header */
+.solution-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.solution-header h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 6px;
+}
+
+.toggle-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f9fafb;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.toggle-btn.active {
+  background-color: #dbeafe;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+}
+
+/* Progress Bar */
+.solution-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #3b82f6;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Steps */
+.solution-step {
+  border: 1px solid #f0f0f0;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.step-number,
+.step-number-large {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-number {
+  width: 24px;
+  height: 24px;
+}
+
+.step-number-large {
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+}
+
+.speak-step-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.step-content,
+.step-content-large {
+  margin-top: 8px;
+}
+
+/* Step Navigation Pills */
+.step-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.step-pill {
+  background-color: #e5e7eb;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.2s ease;
+}
+
+.step-pill.active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.step-pill.completed {
+  background-color: #22c55e;
+  color: white;
+}
+
+/* Step Controls */
+.step-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.nav-btn {
+  background-color: #f3f4f6;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.nav-btn:hover {
+  background-color: #e5e7eb;
+}
+
+.completion-message {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #16a34a;
+  font-weight: 500;
+}
+
+/* Proceed to Challenge */
+.proceed-section {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proceed-message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.proceed-icon {
+  font-size: 1.5rem;
+}
+
+.proceed-btn {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.proceed-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .tts-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .solution-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .proceed-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
