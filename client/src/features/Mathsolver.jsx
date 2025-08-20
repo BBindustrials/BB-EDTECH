@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Send, User, Bot, History, BookOpen, Calculator } from 'lucide-react'
-import './MathSolver.css'
+import './Mathsolver.css'
 import supabase from "../services/supabaseClient";
 
 
